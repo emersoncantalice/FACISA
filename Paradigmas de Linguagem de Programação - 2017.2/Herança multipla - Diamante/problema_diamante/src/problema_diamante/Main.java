@@ -6,7 +6,7 @@ public class Main {
 		
 		D d = new D();
 		
-		// imprimiria o que? andando em C ou andando em D
+		// imprimiria o que? andando em C ou andando em B
 		// eis o problema
 		d.andar();
 

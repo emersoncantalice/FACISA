@@ -1,5 +1,6 @@
 package problema_diamante;
 
-public class D extends B {
+// nao compila, servindo apenas de exemplo
+public class D extends B, C {
 
 }

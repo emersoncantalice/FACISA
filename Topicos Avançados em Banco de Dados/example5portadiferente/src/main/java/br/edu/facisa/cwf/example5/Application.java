@@ -28,13 +28,12 @@ public class Application extends SpringBootServletInitializer {
     }
     
     @Bean
-    public Docket personApi() {
+    public Docket swagger() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .groupName("spring-swagger-api")
+                .groupName("example5portadiferente")
                 .apiInfo(apiInfo())
                 .select()
-                .paths(regex ("/product.*"))
-                .paths(regex ("/user.*"))
+                .paths(regex ("/*.*"))
                 .build();
     }
     

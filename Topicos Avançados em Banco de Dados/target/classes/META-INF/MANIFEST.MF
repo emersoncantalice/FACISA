@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: example5portadiferente
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: emersoncantalice
+Implementation-Vendor-Id: br.edu.facisa.cwf
+Build-Jdk: 1.8.0_161
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

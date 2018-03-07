@@ -1,0 +1,231 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TABD Atividade SWAGGER + Collection Postman - Emerson Cantalice",
+		"_postman_id": "b01871e6-61d9-3a7d-2ae7-a8d94976760f",
+		"description": "Metodos da api example5portadiferente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:8082/user",
+					"request": {
+						"url": "http://localhost:8082/user",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"id\": \"1\",\n\t\"name\": \"Emerson\"\n}"
+						},
+						"description": "Busca usuarios"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8082/user",
+					"request": {
+						"url": "http://localhost:8082/user",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"id\": \"1\",\n\t\"name\": \"Emerson\"\n}"
+						},
+						"description": "Cria usuario"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8082/user/1",
+					"request": {
+						"url": "http://localhost:8082/user/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"id\": \"1\",\n\t\"name\": \"Emerson\"\n}"
+						},
+						"description": "Busca usuario por id"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8082/user",
+					"request": {
+						"url": "http://localhost:8082/user",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"id\": \"1\",\n\t\"name\": \"Emerson Cantalice\"\n}"
+						},
+						"description": "Edita usuario"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"description": "",
+			"item": [
+				{
+					"name": "Listar produtos",
+					"request": {
+						"url": "http://localhost:8082/product",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"id\": \"1\",\n\t\"name\": \"Emerson\"\n}"
+						},
+						"description": "Busca produtos"
+					},
+					"response": []
+				},
+				{
+					"name": "Criar produto",
+					"request": {
+						"url": "http://localhost:8082/product",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"id\": \"1\",\n\t\"description\": \"Laço\",\n\t\"value\": \"2.0\"\n}"
+						},
+						"description": "Salva produto"
+					},
+					"response": []
+				},
+				{
+					"name": "Editar produto",
+					"request": {
+						"url": "http://localhost:8082/product",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"id\": \"1\",\n\t\"description\": \"Laço Azul\",\n\t\"value\": \"2.5\"\n}"
+						},
+						"description": "Edita produto"
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar produto por ID",
+					"request": {
+						"url": "http://localhost:8082/product/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"id\": \"1\",\n\t\"name\": \"Emerson\"\n}"
+						},
+						"description": "Busca produto por id"
+					},
+					"response": []
+				},
+				{
+					"name": "Listar produtos",
+					"request": {
+						"url": "http://localhost:8082/product",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"id\": \"1\",\n\t\"description\": \"Laço Azul\",\n\t\"value\": \"2.5\"\n}"
+						},
+						"description": "Deleta produto"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Swagger",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:8082/swagger-ui.html",
+					"request": {
+						"url": "http://localhost:8082/configuration/ui",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "UI com endpoints da aplicacao"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8082/configuration/ui",
+					"request": {
+						"url": "http://localhost:8082/configuration/ui",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "Configurações do SWAGGER"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
